@@ -182,7 +182,7 @@ Here is an example of a container that fits children to its rect size:
             # Must re-sort the children
             for c in get_children():
                 # Fit to own size
-                fit_child_in_rect(c, Rect2(Vector2(), rect_size))
+                fit_child_in_rect(c, Rect2(Vector2(), size))
 
     func set_some_setting():
         # Some setting changed, ask for children re-sort.
@@ -202,7 +202,7 @@ Here is an example of a container that fits children to its rect size:
                 foreach (Control c in GetChildren())
                 {
                     // Fit to own size
-                    FitChildInRect(c, new Rect2(new Vector2(), RectSize));
+                    FitChildInRect(c, new Rect2(new Vector2(), Size));
                 }
             }
         }
